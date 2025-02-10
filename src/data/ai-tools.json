@@ -4,32 +4,50 @@
     "title": "ארגז הכלים החכם של הנרי",
     "subtitle": "גלו את הכלים החזקים ביותר של בינה מלאכותית כדי לשפר את היצירתיות והפרודוקטיביות שלכם"
   },
-  "categories": [
-    "הכל",
-    "יצירת תמונות",
-    "יצירת טקסט",
-    "יצירת וידאו",
-    "מוזיקה",
-    "פרודוקטיביות"
-  ],
-  "tools": [
+  "messages": [
     {
-      "name": "Mubert",
-      "description": "יצירת מוזיקה באמצעות בינה מלאכותית ללא הגבלות זכויות יוצרים",
-      "category": "מוזיקה",
-      "url": "https://mubert.com"
+      "id": 9,
+      "date": "2023-07-26T11:00:43",
+      "text": "אם אתם יוצרים סרטונים או מצגות ורוצים לצרף להם מוזיקה ללא זכויות יוצרים 🎶",
+      "tool": {
+        "name": "Mubert",
+        "description": "יצירת מוזיקה מתיאור בטקסט ובחירה של ז'אנר מוזיקלי ואווירה, כולל מסלול חינמי",
+        "url": "https://mubert.com/render/pricing?via=henry-AI",
+        "category": "מוזיקה"
+      }
     },
     {
-      "name": "ChatGPT",
-      "description": "בינה מלאכותית מתקדמת לשיחה ויצירת טקסטים",
-      "category": "יצירת טקסט",
-      "url": "https://chat.openai.com"
+      "id": 11,
+      "date": "2023-07-31T22:11:18",
+      "text": "עדכון חשוב ממש מעכשיו 😃\nהאפליקציה הרשמית של Chatgpt",
+      "tool": {
+        "name": "ChatGPT",
+        "description": "האפליקציה הרשמית של OpenAI לשיחה עם בינה מלאכותית",
+        "url": "https://chat.openai.com",
+        "category": "יצירת טקסט"
+      }
     },
     {
-      "name": "Perplexity AI",
-      "description": "עוזר מחקר חכם למאמרים אקדמיים ותוכן",
-      "category": "פרודוקטיביות",
-      "url": "https://www.perplexity.ai"
+      "id": 12,
+      "date": "2023-08-02T21:01:44",
+      "text": "בעקבות שאלות שהופנו אליי לגבי מציאת מאמרים אקדמיים",
+      "tool": {
+        "name": "Perplexity AI",
+        "description": "צ'אט בוט חכם למציאת ועזרה עם מאמרים אקדמיים, סרטונים, ויקיפדיה וכתיבה. תומך בעברית",
+        "url": "https://www.perplexity.ai",
+        "category": "מחקר"
+      }
+    },
+    {
+      "id": 14,
+      "date": "2023-08-03T21:09:43",
+      "text": "את מאגר הכלים וגם מאגר המדריכים ובכלל חצי מהחיים שלי אני מנהל בכלי המטורף Notion",
+      "tool": {
+        "name": "Notion",
+        "description": "כלי לניהול מידע, פרויקטים, משימות ושיתופי פעולה. שילוב של אקסל, וורד, פאוור פוינט ולוח שנה",
+        "url": "https://affiliate.notion.so/ko391ixh8gtq",
+        "category": "פרודוקטיביות"
+      }
     }
   ]
 }

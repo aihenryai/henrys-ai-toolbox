@@ -9,13 +9,17 @@ import { SearchIcon, ArrowRight } from "lucide-react";
 import aiToolsData from "../data/ai-tools.json";
 
 const Index = () => {
+  // Extract unique categories from messages
+  const categories = ["הכל", ...new Set(aiToolsData.messages.map(msg => msg.tool.category))];
+  
   const [selectedCategory, setSelectedCategory] = React.useState("הכל");
   const [email, setEmail] = React.useState("");
   const { toast } = useToast();
 
-  const filteredTools = aiToolsData.tools.filter(
-    (tool) => selectedCategory === "הכל" || tool.category === selectedCategory
-  );
+  // Filter tools based on selected category
+  const filteredTools = aiToolsData.messages
+    .map(msg => msg.tool)
+    .filter(tool => selectedCategory === "הכל" || tool.category === selectedCategory);
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
@@ -51,7 +55,7 @@ const Index = () => {
       {/* Category Filter */}
       <section className="container px-4 py-12">
         <div className="flex flex-wrap justify-center gap-3 mb-12 animate-fade-in">
-          {aiToolsData.categories.map((category) => (
+          {categories.map((category) => (
             <Button
               key={category}
               variant={selectedCategory === category ? "default" : "outline"}
