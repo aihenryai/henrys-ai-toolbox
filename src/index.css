@@ -43,22 +43,9 @@
   }
   body {
     @apply bg-background text-foreground antialiased;
-    direction: rtl;
   }
 }
 
 .glass-effect {
   @apply bg-white/80 backdrop-blur-sm;
-}
-
-.rtl {
-  direction: rtl;
-}
-
-.gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-600;
-}
-
-.gradient-bg {
-  @apply bg-gradient-to-r from-purple-600 to-blue-600;
 }
