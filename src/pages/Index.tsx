@@ -9,8 +9,10 @@ import { SearchIcon, ArrowRight } from "lucide-react";
 import aiToolsData from "../data/ai-tools.json";
 
 const Index = () => {
-  // Extract unique categories from messages
-  const categories = ["הכל", ...new Set(aiToolsData.messages.map(msg => msg.tool.category))];
+  // Extract unique categories from messages that have tool data
+  const categories = ["הכל", ...new Set(aiToolsData.messages
+    .filter(msg => msg.tool && msg.tool.category) // Filter out messages without tool data
+    .map(msg => msg.tool.category))];
   
   const [selectedCategory, setSelectedCategory] = React.useState("הכל");
   const [email, setEmail] = React.useState("");
@@ -18,6 +20,7 @@ const Index = () => {
 
   // Filter tools based on selected category
   const filteredTools = aiToolsData.messages
+    .filter(msg => msg.tool && msg.tool.category) // Filter out messages without tool data
     .map(msg => msg.tool)
     .filter(tool => selectedCategory === "הכל" || tool.category === selectedCategory);
 
